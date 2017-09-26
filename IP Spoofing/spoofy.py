@@ -1,3 +1,12 @@
+'''
+    # IP Spoofer
+    Author: Tejas Dastane
+
+    Self-explanatory, short & sweet code!
+
+    Dependencies: Scapy library. You need to download it.
+'''
+
 from scapy.all import *
 
 source = '123.45.67.89'
@@ -8,3 +17,5 @@ payload = 'This is the CEO of Macrosoft contacting you.'
 
 spoofed = IP(src=source, dst=dest) / TCP(sport=src_port, dport=dest_port) / payload
 send(spoofed)
+
+# Done!

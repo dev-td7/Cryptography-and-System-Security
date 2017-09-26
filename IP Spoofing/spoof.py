@@ -1,3 +1,10 @@
+''' 
+    # Packet sniffing
+    Author: Tejas Dastane
+
+    Only works in Linux. Windows has its own problems!
+    Program logic is self-explanatory! Use Ctrl + C to stop sniffing on console.
+ '''
 import socket
 from struct import *
 
@@ -16,7 +23,7 @@ while True:
         else:
             print 'Incoming request from '+incoming_ip
             all_ips_handled.add(incoming_ip)
-    except KeyboardInterrupt:
+    except KeyboardInterrupt: # When Ctrl + C is pressed.
         print 'Stopped spoofing IPs\n\nAll IPs handled:'
         for ip in all_ips_handled: print ip
         print '\nThe IPs that were blocked:'
