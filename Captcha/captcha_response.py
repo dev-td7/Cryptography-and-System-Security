@@ -6,5 +6,5 @@ def calc(op1, op, op2):
 def cap_resp():
     a,b,op=randint(1,10),randint(1,10),['+','-','*'][randint(0,2)]
     r=calc(a,op,b)
-    if input('\nPlease authenticate the transaction\n\n'+str(a)+' '+str(op)+' '+str(b)+' = ') == r: print 'Authentication passed :)'
+    if input('\nPlease provide an evaluation of the following expression:\n\n'+str(a)+' '+str(op)+' '+str(b)+' = ') == r: print 'Authentication passed :)'
     else: print 'Authentication failed :('
