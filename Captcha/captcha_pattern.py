@@ -5,3 +5,5 @@ def cap_pat():
     print "Enter '"+what+"' "+str(how_much)+" times below:\n"
     if raw_input().strip() == what*how_much: print '\nAuthentication passed :)'
     else: print '\nAuthentication failed :('
+
+# Now you know the secret recipe (^_^)
